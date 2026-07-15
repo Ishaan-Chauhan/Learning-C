@@ -1,2 +1,5 @@
 # Learning-C
-Beginner C programs while learning fundamentals - menu systems , calculator , and small console apps
+Beginner C programs written while learning the language fundamentals
+## Contents
+- Menu-driven food ordering system with billing
+- Basic calculator
