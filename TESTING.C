@@ -1,18 +1,27 @@
-/*             Author - Ishaan
+/*             
+ * Author - Ishaan
+ * Objective - Increment/Decrement operator evaluation
+ */
 
+#include <stdio.h>
 
-*/
-#include<stdio.h>
-#include<conio.h>
-void main(){
-	int a,b,c,d,e;
-	clrscr();
-	a=2 , b=5 ,c=7;
-	d=++a + ++a + ++a + a++ + a++ + ++b + ++b + b++ + ++c + c++ + a+b+c;
-	printf("\nd is %d",d);
-	e=++a + ++a + a++ + ++b + ++b + ++c + ++d;
-	printf("\ne is %d",e);
-	printf("\n%d\n%d\n%d\n%d\n%d\n",++a,++b,++c,++d,++a);
-	getch();
+int main(void) {
+    int a, b, c, d, e;
 
-}//main
+    a = 2; 
+    b = 5; 
+    c = 7;
+
+    // Note: This expression causes Undefined Behaviour in standard C
+    d = ++a + ++a + ++a + a++ + a++ + ++b + ++b + b++ + ++c + c++ + a + b + c;
+    printf("\nd is %d", d);
+
+    // Note: This expression also causes Undefined Behaviour
+    e = ++a + ++a + a++ + ++b + ++b + ++c + ++d;
+    printf("\ne is %d", e);
+
+    // Note: Multiple pre-increments inside a single printf is also undefined behavior
+    printf("\n%d\n%d\n%d\n%d\n%d\n", ++a, ++b, ++c, ++d, ++a);
+
+    return 0;
+}
