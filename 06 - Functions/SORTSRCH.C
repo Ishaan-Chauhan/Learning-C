@@ -1,5 +1,4 @@
 /*
-    SORTSRCH.C  (Turbo C++ style)
     Array Sorting & Searching Menu
     - Bubble sort
     - Selection sort
