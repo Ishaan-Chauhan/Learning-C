@@ -1,5 +1,4 @@
 /*
-    STACKQ.C  (Turbo C++ style)
     Stack Implementation using Array
     - Push, Pop, Peek, Display
     - Includes a bracket-matching demo using the stack
